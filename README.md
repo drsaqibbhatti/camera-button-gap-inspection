@@ -1,4 +1,4 @@
-# Camera Module & Power Button Gap Inspection (Python)
+# Camera Module & Power Button Gap Inspection
 
 Vision-based **gap measurement and verification** for assembled components (camera module / power button).  
 Implements a robust **geometric measurement pipeline** with automated **PASS/FAIL** against tolerance thresholds and
