@@ -5,6 +5,7 @@ Implements a robust **geometric measurement pipeline** with automated **PASS/FAI
 real-time feedback for assembly QA.
 
 > Training/evaluation media are omitted due to data confidentiality.
+> 
 https://drsaqibbhatti.com/projects/gap-inspection.html
 
 ---
