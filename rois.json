@@ -1,0 +1,7 @@
+{
+  "polygons": {
+    "camera_module": [[80,80],[520,80],[520,420],[80,420]],
+    "power_button": [[760,200],[1180,200],[1180,520],[760,520]]
+  },
+  "note": "Edit using src.roi_tool. Coordinates are in image pixels."
+}

@@ -1,0 +1,43 @@
+# Gap Inspection configuration
+calibration:
+  # Option A: direct value (recommended if fixed setup)
+  mm_per_pixel: 0.01
+  # Option B: load from file created by src.calibrate
+  calib_json: calib.json
+
+rois:
+  path: rois.json
+  # ROI names inside rois.json
+  part_a_name: camera_module
+  part_b_name: power_button
+
+preproc:
+  # optional undistortion (set enabled=true and provide camera matrix/dist coeffs)
+  undistort:
+    enabled: false
+    camera_matrix: [[1000,0,640],[0,1000,360],[0,0,1]]
+    dist_coeffs: [0,0,0,0,0]
+
+  gray_blur_ksize: 5
+  canny_low: 60
+  canny_high: 160
+  morph_kernel: 3
+  morph_iters: 2
+
+measurement:
+  # choose method: "closest_points" (robust), or "bbox_gap" (fast)
+  method: closest_points
+  # If parts are roughly left/right, set direction to "x" for stable measurement
+  direction: x   # x | y | auto
+
+tolerance:
+  gap_min_mm: 0.20
+  gap_max_mm: 0.60
+
+runtime:
+  display_scale: 1.0
+  draw_debug: true
+
+server:
+  host: 0.0.0.0
+  port: 8000
